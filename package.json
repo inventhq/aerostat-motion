@@ -1,0 +1,82 @@
+{
+  "name": "@vishinvents/aerostat",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "The missing physics the browser forgot to give you. Spring-first animation library for modern frameworks.",
+  "author": "vishinvents",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vishinvents/aerostat.git"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./core": {
+      "import": "./dist/core/index.js",
+      "types": "./dist/core/index.d.ts"
+    },
+    "./svelte": {
+      "import": "./dist/svelte.js",
+      "types": "./dist/svelte.d.ts"
+    },
+    "./react": {
+      "import": "./dist/react.js",
+      "types": "./dist/react.d.ts"
+    },
+    "./solid": {
+      "import": "./dist/solid.js",
+      "types": "./dist/solid.d.ts"
+    },
+    "./ui/svelte": {
+      "svelte": "./dist/ui/svelte/index.js",
+      "import": "./dist/ui/svelte/index.js",
+      "types": "./dist/ui/svelte/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "animation",
+    "tween",
+    "spring",
+    "micro-interactions",
+    "lightweight",
+    "svelte",
+    "react",
+    "solidjs",
+    "nextjs"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "solid-js": ">=1.0.0",
+    "svelte": ">=3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "solid-js": {
+      "optional": true
+    },
+    "svelte": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "svelte": "^5.51.2",
+    "tsup": "^8.0.0",
+    "typescript": "^5.3.0"
+  }
+}
