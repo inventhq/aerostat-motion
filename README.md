@@ -36,7 +36,7 @@ Aerostat is the animation primitive for modern frameworks. While Svelte, React, 
 ## Installation
 
 ```bash
-npm install aerostat
+npm i @vishinvents/aerostat
 ```
 
 ---
